@@ -139,7 +139,7 @@ async function delay(ms){
 }
 
 const player1 = new Player("Player 1", .25, .3, 0xD1FFC6)
-const player2 = new Player("Player 2", .25, -.3, 0xFFCFD2)
+//const player2 = new Player("Player 2", .25, -.3, 0xFFCFD2)
 
 const players = [
     {
@@ -147,24 +147,24 @@ const players = [
         key: "ArrowUp",
         name: "Player 1"
     },
-    {
-        player: player2,
-        key: "w",
-        name: "Player 2"
-    }
+    //{
+      //  player: player2,
+        //key: "w",
+        //name: "Player 2"
+    //}
 ]
 
 const TIME_LIMIT = 15
 async function init(){
     await delay(500)
-    text.innerText = "Starting in 3"
+    text.innerText = "Comenzar en 3"
     await delay(500)
-    text.innerText = "Starting in 2"
+    text.innerText = "Comenzar en 2"
     await delay(500)
-    text.innerText = "Starting in 1"
+    text.innerText = "Comenzar en 1"
     lookBackward()
     await delay(500)
-    text.innerText = "Gooo!!!"
+    text.innerText = "Comienza!!!"
     bgMusic.play()
     start()
 }
