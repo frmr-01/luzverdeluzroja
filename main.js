@@ -112,13 +112,13 @@ class Player {
             }
         }
         if(this.playerInfo.positionX < end_position + .7){
-            text.innerText = this.playerInfo.name + " is safe!!!"
+            text.innerText = this.playerInfo.name + " Tu inversión se ha salvado"
             this.playerInfo.isDead = true
             this.stop()
             SAFE_PLAYERS++
             winMusic.play()
             if(SAFE_PLAYERS == players.length){
-                text.innerText = "Everyone is safe!!!"
+                text.innerText = "¡Tu inersión se ha salvado!"
                 gameStat = "ended"
             }
             if(DEAD_PLAYERS + SAFE_PLAYERS == players.length){
