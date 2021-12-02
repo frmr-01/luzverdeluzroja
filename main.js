@@ -104,7 +104,7 @@ class Player {
             DEAD_PLAYERS++
             loseMusic.play()
             if(DEAD_PLAYERS == players.length){
-                text.innerText = "Everyone lost!!!"
+                text.innerText = "¡Has perdido tu inversión!"
                 gameStat = "ended"
             }
             if(DEAD_PLAYERS + SAFE_PLAYERS == players.length){
