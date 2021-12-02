@@ -118,7 +118,7 @@ class Player {
             SAFE_PLAYERS++
             winMusic.play()
             if(SAFE_PLAYERS == players.length){
-                text.innerText = "¡Tu inersión se ha salvado!"
+                text.innerText = "¡Tu inversión se ha salvado!"
                 gameStat = "ended"
             }
             if(DEAD_PLAYERS + SAFE_PLAYERS == players.length){
@@ -144,7 +144,7 @@ const player1 = new Player("Player 1", .25, .3, 0xD1FFC6)
 const players = [
     {
         player: player1,
-        key: "ArrowUp",
+        key: "ArrowLeft",
         name: "Player 1"
     },
     //{
